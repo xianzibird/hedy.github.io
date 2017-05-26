@@ -332,30 +332,13 @@
       
         
           
-            <h1 id="Javascript编程规则"><a href="#Javascript编程规则" class="headerlink" title="Javascript编程规则"></a>Javascript编程规则</h1><p>##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：</p>
-<p>应该这么写：</p>
+            <h1 id="Javascript编程规则"><a href="#Javascript编程规则" class="headerlink" title="Javascript编程规则"></a>Javascript编程规则</h1><h2 id="规则一：表示区块起首的大括号，不要另起一行。具体例子如下："><a href="#规则一：表示区块起首的大括号，不要另起一行。具体例子如下：" class="headerlink" title="规则一：表示区块起首的大括号，不要另起一行。具体例子如下："></a>规则一：表示区块起首的大括号，不要另起一行。具体例子如下：</h2><p>应该这么写：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">return &#123;</div><div class="line">	key : value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>不要这么写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">return</div><div class="line">&#123;</div><div class="line">     key : value;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>因为javascript会自动在return后面添加；从而造成错误</p>
-<p>##规则二：圆括号的正确使用<br>圆括号（parentheses）在Javascript中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。我们可以用空格，区分这两种不同的括号。</p>
-<p>###规则A：调用函数的时候，函数名和左括号之间没有空格；</p>
-<p>###规则B:函数名和序列参数之间没有空格；</p>
-<p>###规则C：所有其他语法元素和左括号之间都有空格；</p>
-<p>##规则三：不要省略句末的分号</p>
-<p>##规则四：不要使用with语句</p>
-<p>##规则五：不要使用“相等”（==），只使用“严格相等”（===）</p>
-<p>##规则六：不要将不同目的的语句，合并成一行</p>
-<p>##规则七：所有变量声明都放在函数的头部</p>
-<p>##规则八：所有函数都在使用前定义</p>
-<p>##规则九：避免使用全局变量</p>
-<p>##规则十：构建函数的首字母大写</p>
-<p>##规则十一：不要使用自增（++）和自减（–），使用（+=）和（-=）</p>
-<p>##规则十二：总是使用大括号表示区块</p>
-<p>##规则十三：function中的空格使用</p>
-<p>###例子：正确的写法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function call(name) &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">var cell = function () &#123;</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>  ###不推荐的写法</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var call = function(name)&#123;</div><div class="line"> // code</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<h2 id="规则二：圆括号的正确使用"><a href="#规则二：圆括号的正确使用" class="headerlink" title="规则二：圆括号的正确使用"></a>规则二：圆括号的正确使用</h2><p>圆括号（parentheses）在Javascript中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。我们可以用空格，区分这两种不同的括号。</p>
+<h3 id="规则A：调用函数的时候，函数名和左括号之间没有空格；"><a href="#规则A：调用函数的时候，函数名和左括号之间没有空格；" class="headerlink" title="规则A：调用函数的时候，函数名和左括号之间没有空格；"></a>规则A：调用函数的时候，函数名和左括号之间没有空格；</h3><h3 id="规则B-函数名和序列参数之间没有空格；"><a href="#规则B-函数名和序列参数之间没有空格；" class="headerlink" title="规则B:函数名和序列参数之间没有空格；"></a>规则B:函数名和序列参数之间没有空格；</h3><h3 id="规则C：所有其他语法元素和左括号之间都有空格；"><a href="#规则C：所有其他语法元素和左括号之间都有空格；" class="headerlink" title="规则C：所有其他语法元素和左括号之间都有空格；"></a>规则C：所有其他语法元素和左括号之间都有空格；</h3><h2 id="规则三：不要省略句末的分号"><a href="#规则三：不要省略句末的分号" class="headerlink" title="规则三：不要省略句末的分号"></a>规则三：不要省略句末的分号</h2><h2 id="规则四：不要使用with语句"><a href="#规则四：不要使用with语句" class="headerlink" title="规则四：不要使用with语句"></a>规则四：不要使用with语句</h2><h2 id="规则五：不要使用“相等”（-），只使用“严格相等”（-）"><a href="#规则五：不要使用“相等”（-），只使用“严格相等”（-）" class="headerlink" title="规则五：不要使用“相等”（==），只使用“严格相等”（===）"></a>规则五：不要使用“相等”（==），只使用“严格相等”（===）</h2><h2 id="规则六：不要将不同目的的语句，合并成一行"><a href="#规则六：不要将不同目的的语句，合并成一行" class="headerlink" title="规则六：不要将不同目的的语句，合并成一行"></a>规则六：不要将不同目的的语句，合并成一行</h2><h2 id="规则七：所有变量声明都放在函数的头部"><a href="#规则七：所有变量声明都放在函数的头部" class="headerlink" title="规则七：所有变量声明都放在函数的头部"></a>规则七：所有变量声明都放在函数的头部</h2><h2 id="规则八：所有函数都在使用前定义"><a href="#规则八：所有函数都在使用前定义" class="headerlink" title="规则八：所有函数都在使用前定义"></a>规则八：所有函数都在使用前定义</h2><h2 id="规则九：避免使用全局变量"><a href="#规则九：避免使用全局变量" class="headerlink" title="规则九：避免使用全局变量"></a>规则九：避免使用全局变量</h2><h2 id="规则十：构建函数的首字母大写"><a href="#规则十：构建函数的首字母大写" class="headerlink" title="规则十：构建函数的首字母大写"></a>规则十：构建函数的首字母大写</h2><h2 id="规则十一：不要使用自增（-）和自减（–），使用（-）和（-）"><a href="#规则十一：不要使用自增（-）和自减（–），使用（-）和（-）" class="headerlink" title="规则十一：不要使用自增（++）和自减（–），使用（+=）和（-=）"></a>规则十一：不要使用自增（++）和自减（–），使用（+=）和（-=）</h2><h2 id="规则十二：总是使用大括号表示区块"><a href="#规则十二：总是使用大括号表示区块" class="headerlink" title="规则十二：总是使用大括号表示区块"></a>规则十二：总是使用大括号表示区块</h2><h2 id="规则十三：function中的空格使用"><a href="#规则十三：function中的空格使用" class="headerlink" title="规则十三：function中的空格使用"></a>规则十三：function中的空格使用</h2><h3 id="例子：正确的写法"><a href="#例子：正确的写法" class="headerlink" title="例子：正确的写法"></a>例子：正确的写法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function call(name) &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">var cell = function () &#123;</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h3 id="不推荐的写法"><a href="#不推荐的写法" class="headerlink" title="不推荐的写法"></a>不推荐的写法</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var call = function(name)&#123;</div><div class="line"> // code</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>注意：参数的后括号后必须加空格。</li>
 <li>匿名函数function和括号之间必须加空格。</li>
