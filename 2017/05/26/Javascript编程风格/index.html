@@ -85,16 +85,16 @@
 
 
 
-<meta name="description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
+<meta name="description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：  应该这么写： 123return &amp;#123;	key : value;&amp;#125; 不要这么写：1234return&amp;#123;     key : value;&amp;#125; 因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parenthese">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript">
 <meta property="og:url" content="http://yoursite.com/2017/05/26/Javascript编程风格/index.html">
 <meta property="og:site_name" content="hedy的博客">
-<meta property="og:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
-<meta property="og:updated_time" content="2017-05-26T09:04:28.924Z">
+<meta property="og:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：  应该这么写： 123return &amp;#123;	key : value;&amp;#125; 不要这么写：1234return&amp;#123;     key : value;&amp;#125; 因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parenthese">
+<meta property="og:updated_time" content="2017-05-26T09:13:43.946Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript">
-<meta name="twitter:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
+<meta name="twitter:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：  应该这么写： 123return &amp;#123;	key : value;&amp;#125; 不要这么写：1234return&amp;#123;     key : value;&amp;#125; 因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parenthese">
 
 
 
@@ -330,10 +330,12 @@
 
       
         <h1 id="Javascript编程规则"><a href="#Javascript编程规则" class="headerlink" title="Javascript编程规则"></a>Javascript编程规则</h1><ul>
-<li>##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：<br>应该这么写：<br>、、、<br>return {<br>key : value;<br>}</li>
+<li>##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：</li>
 </ul>
-<p>、、、</p>
-<p>不要这么写：<br>、、、<br>return<br>{<br>     key : value;<br>}<br>、、、<br>因为javascript会自动在return后面添加；从而造成错误</p>
+<p>应该这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">return &#123;</div><div class="line">	key : value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>不要这么写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">return</div><div class="line">&#123;</div><div class="line">     key : value;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>因为javascript会自动在return后面添加；从而造成错误</p>
 <ul>
 <li>##规则二：圆括号的正确使用<br>圆括号（parentheses）在Javascript中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。我们可以用空格，区分这两种不同的括号。</li>
 </ul>
@@ -351,18 +353,12 @@
 <li>##规则十：构建函数的首字母大写</li>
 <li>##规则十一：不要使用自增（++）和自减（–），使用（+=）和（-=）</li>
 <li>##规则十二：总是使用大括号表示区块</li>
-<li><p>##规则十三：function中的空格使用<br>例子：<br>正确的写法<br>、、、</p>
-<p>function call(name) {</p>
-<p>}</p>
-<p>var cell = function () {</p>
-<p>};</p>
-</li>
+<li>##规则十三：function中的空格使用</li>
 </ul>
-<p>、、、</p>
-<p>  不推荐的写法</p>
-<p>  、、、</p>
-<p>  var call = function(name){<br>  // code<br>  }</p>
-<p>、、、</p>
+<p>###例子：正确的写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function call(name) &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">var cell = function () &#123;</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>  ###不推荐的写法</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var call = function(name)&#123;</div><div class="line"> // code</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>注意：参数的后括号后必须加空格。</li>
 <li>匿名函数function和括号之间必须加空格。</li>
