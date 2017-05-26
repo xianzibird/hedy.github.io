@@ -470,10 +470,11 @@
 <p>有两点需要注意：</p>
 <ul>
 <li>百分比是相对于父元素而言的</li>
-<li>是相对父元素的宽度而非宽度和高度<br>为什么会这样，而不是我们感觉上应该的横向为宽度的百分比，纵向为高度的百分比呢<br>这是因为这只发生在默认的<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/*横向书写模式*/</div><div class="line">direction: ltr;</div><div class="line">writing-mode: horizontal-tb;</div><div class="line">的情况下。即我们默认的书写模式是横向的，纵向可以无限长，如果改为书写模式是纵向的，则结果就是相对父元素的高度了</div></pre></td></tr></table></figure>
+<li><p>是相对父元素的宽度而非宽度和高度<br>为什么会这样，而不是我们感觉上应该的横向为宽度的百分比，纵向为高度的百分比呢<br>这是因为这只发生在默认的的情况下。即我们默认的书写模式是横向的，纵向可以无限长，如果改为书写模式是纵向的，则结果就是相对父元素的高度了</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/*横向书写模式*/</div><div class="line">direction: ltr;</div><div class="line">writing-mode: horizontal-tb;</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/*纵向书写模式*/</div><div class="line">-webkit-writing-mode: vertical-rl; /* for browsers of webkit engine */</div><div class="line">   writing-mode: tb-rl; /* for ie */</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/*纵向书写模式*/</div><div class="line">-webkit-writing-mode: vertical-rl; /* for browsers of webkit engine */</div><div class="line">    writing-mode: tb-rl; /* for ie */</div></pre></td></tr></table></figure>
 <p>**注意：内边距的原理同外边距</p>
 
           
