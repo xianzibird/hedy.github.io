@@ -85,16 +85,16 @@
 
 
 
-<meta name="description" content="详解marginmargin得取值常见的是取具体的px，em值等等margin还可以取auto值，这是让浏览器自己去计算，一般用在设置居中的时候margin还可以取百分比，规范上是这么写的：">
+<meta name="description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript">
 <meta property="og:url" content="http://yoursite.com/2017/05/26/Javascript编程风格/index.html">
 <meta property="og:site_name" content="hedy的博客">
-<meta property="og:description" content="详解marginmargin得取值常见的是取具体的px，em值等等margin还可以取auto值，这是让浏览器自己去计算，一般用在设置居中的时候margin还可以取百分比，规范上是这么写的：">
-<meta property="og:updated_time" content="2017-05-26T08:29:13.787Z">
+<meta property="og:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
+<meta property="og:updated_time" content="2017-05-26T09:01:10.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript">
-<meta name="twitter:description" content="详解marginmargin得取值常见的是取具体的px，em值等等margin还可以取auto值，这是让浏览器自己去计算，一般用在设置居中的时候margin还可以取百分比，规范上是这么写的：">
+<meta name="twitter:description" content="Javascript编程规则 ##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：应该这么写：、、、return {key : value;}  、、、 不要这么写：、、、return{     key : value;}、、、因为javascript会自动在return后面添加；从而造成错误  ##规则二：圆括号的正确使用圆括号（parentheses）在Javascript中有两种作">
 
 
 
@@ -329,7 +329,39 @@
       
 
       
-        <h1 id="详解margin"><a href="#详解margin" class="headerlink" title="详解margin"></a>详解margin</h1><p>margin得取值常见的是取具体的px，em值等等<br>margin还可以取auto值，这是让浏览器自己去计算，一般用在设置居中的时候<br>margin还可以取百分比，规范上是这么写的：<br></p>
+        <h1 id="Javascript编程规则"><a href="#Javascript编程规则" class="headerlink" title="Javascript编程规则"></a>Javascript编程规则</h1><ul>
+<li>##规则一：表示区块起首的大括号，不要另起一行。具体例子如下：<br>应该这么写：<br>、、、<br>return {<br>key : value;<br>}</li>
+</ul>
+<p>、、、</p>
+<p>不要这么写：<br>、、、<br>return<br>{<br>     key : value;<br>}<br>、、、<br>因为javascript会自动在return后面添加；从而造成错误</p>
+<ul>
+<li>##规则二：圆括号的正确使用<br>圆括号（parentheses）在Javascript中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。我们可以用空格，区分这两种不同的括号。</li>
+</ul>
+<p>###规则A：调用函数的时候，函数名和左括号之间没有空格；</p>
+<p>###规则B:函数名和序列参数之间没有空格；</p>
+<p>###规则C：所有其他语法元素和左括号之间都有空格；</p>
+<ul>
+<li>##规则三：不要省略句末的分号</li>
+<li>##规则四：不要使用with语句</li>
+<li>##规则五：不要使用“相等”（==），只使用“严格相等”（===）</li>
+<li>##规则六：不要将不同目的的语句，合并成一行</li>
+<li>##规则七：所有变量声明都放在函数的头部</li>
+<li>##规则八：所有函数都在使用前定义</li>
+<li>##规则九：避免使用全局变量</li>
+<li>##规则十：构建函数的首字母大写</li>
+<li>##规则十一：不要使用自增（++）和自减（–），使用（+=）和（-=）</li>
+<li>##规则十二：总是使用大括号表示区块</li>
+<li><p>##规则十三：function中的空格使用<br>例子：<br>正确的写法<br>、、、</p>
+<p>function call(name) {</p>
+<p>}</p>
+<p>var cell = function () {</p>
+<p>};<br>、、、<br>不推荐的写法<br>、、、<br>var call = function(name){<br>// code<br>}<br>、、、</p>
+</li>
+</ul>
+<ul>
+<li>注意：参数的后括号后必须加空格。</li>
+<li>匿名函数function和括号之间必须加空格。</li>
+</ul>
 
       
     </div>
@@ -485,7 +517,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#详解margin"><span class="nav-number">1.</span> <span class="nav-text">详解margin</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Javascript编程规则"><span class="nav-number">1.</span> <span class="nav-text">Javascript编程规则</span></a></li></ol></div>
             
 
           </div>
